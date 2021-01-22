@@ -1,3 +1,5 @@
+// https://github.com/Joydip-Paul/Task-Javascript
+
 
 
 //kilometerToMeter
@@ -31,6 +33,9 @@ function hotelCost(days){
     var FirstPackage = 100;
     var SecondPackage = 80;
     var ThirdPackage = 50;
+    if(days<0){
+        return "Days connot be negative";
+    }
     if(days>=1 && days<=10){
         var package = days*FirstPackage;
         return package;
